@@ -1,6 +1,6 @@
-# SFDX App
+# Order Edit In Line
 
-## Dev, Build and Test
+## This is a simple Lightning component to edit the Order status and Tracking Nubmer fields in line.
 
 ## Resources
 
