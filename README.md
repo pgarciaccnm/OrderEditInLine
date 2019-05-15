@@ -17,8 +17,13 @@
     <ul><li>OrderLineEditController.js</li></ul>
     <p>OrderTableEdit: It's render the all Orders in a Card element</p>
     <ul><li>OrderTableController.js</li></ul>
-    
-  
+  </li>
+  <li>Apex Class
+    <p>OrderAuraController: Manage the read and update the Orders </p>
+  </li>Apex Trigger
+  <p>OrderUpdateFields: It's avoid to change the Order status if the Shipping Tracking Number is empty.</p>
+  <p>Note: The Shipping Tracking Number is required only when the shipping is Express</p>
+  <li>
   </li>
 </ul>
 
