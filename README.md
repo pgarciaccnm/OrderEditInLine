@@ -7,7 +7,7 @@
 <p><strong>Scope of this component</strong></p>
 <p>List all Orders who belong to the Case record and allow to edit the Status and Shipping Track Number</p>
 
-## Description of Files and Directories
+## Custom Components
 <ul>
   <li>Custom fields<p>Order.CaseId: it's lookup field of Case.Id</p>
   <p>Shipping Tracking Number: It's a text field to enter the tracking number of the order<p>
