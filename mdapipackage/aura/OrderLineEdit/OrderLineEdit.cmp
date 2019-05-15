@@ -1,0 +1,52 @@
+<aura:component controller="OrderAuraController"  implements="flexipage:availableForAllPageTypes,force:hasRecordId,force:appHostable" >
+
+<aura:attribute name="sNo" type="string" />
+<aura:attribute name="singleRec" type="sobject" default="{	'sobjectType' : 'order',
+                                                             	'Id' : '',
+                                                             	'OrderNumber' : '',
+                                                               	'Shipping_Track_Number__c' : '',
+                                                                 'Shipping_Institution__c' : '',
+                                                                 'Shipping_Attention__c' : '',
+                                                                 'Status' : '',
+                                                             	'TotalAmount': '0',
+                                                             	'OrderItems.Product2.Name' : '',
+                                                                 'OrderItems.Product2.Family' : '',
+                                                                 'ShippingStreet':'',
+                                                                 'ShippingCity' : '',
+                                                                 'ShippingState' : '',
+                                                                 'ShippingPostalCode' : '',
+                                                                 'ShippingCountry' : ''
+                                                             	
+                                                               }"/>
+
+
+
+<aura:attribute name="shippingExpressFields" type="String[]" default="['OrderNumber','TotalAmount', 'Shipping_Institution__c', 'Shipping_Attention__c', 'ShippingAddress', 'Status', 'Shipping_Track_Number__c']" />
+    
+<aura:attribute name="shippingRegularFields" type="String[]" default="['OrderNumber','TotalAmount', 'Shipping_Institution__c', 'Shipping_Attention__c', 'ShippingAddress', 'Status']" />
+   
+<aura:attribute name="notShippingFields" type="String[]" default="['OrderNumber','Status']" />
+
+<aura:attribute name="fields" type="String[]"  />
+    
+<aura:handler name="init" value="{!this}" action="{!c.hasDelivery}"/>       
+<!-- HEADER BLOCK DESING -->
+<div class="slds-p-left_large slds-p-right_medium slds-box slds-m-around_xx-small"> 
+    
+    
+    <lightning:recordForm
+        recordId="{!v.singleRec.Id}"
+        objectApiName="Order"
+        columns="2"
+		fields="{!v.fields}"
+        mode="view" >
+    
+ 
+    </lightning:recordForm>
+    	<aura:iteration items="{!v.singleRec.OrderItems}" var="prod" indexVar="sNo">
+        <dt class="slds-item_label slds-text-color_weak slds-truncate" title="Product Name">{!prod.Product2.Family}</dt>
+        <dd class="slds-item_detail slds-truncate">{!prod.Product2.Name}</dd>        
+        </aura:iteration>
+<!-- END HEADER BLOCK DESING -->
+</div>
+</aura:component>
