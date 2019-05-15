@@ -14,9 +14,9 @@
     </li>
   <li>Aura Components
     <p>OrderLineEdit: It's render every Order<p>
-    <ul><li>OrderLineEditController.js</li</ul>
+    <ul><li>OrderLineEditController.js</li></ul>
     <p>OrderTableEdit: It's render the all Orders in a Card element</p>
-      <ul><li>OrderTableController.js</li</ul>
+    <ul><li>OrderTableController.js</li></ul>
     
   
   </li>
