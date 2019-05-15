@@ -4,6 +4,8 @@
 
 ## Job Requirement: 
 <p> As Operator departement, I wan to manage the orders process through Case process because it provide me a better view of the order process.</p>
+<p><strong>Scope of this component</strong></p>
+<p>The Orders who belong to the Case record and allow to edit the Status and Shipping Track Number</p>
 
 ## Description of Files and Directories
 <ul>
