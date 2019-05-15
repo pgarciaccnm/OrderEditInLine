@@ -20,10 +20,10 @@
   </li>
   <li>Apex Class
     <p>OrderAuraController: Manage the read and update the Orders </p>
-  </li>Apex Trigger
+  </li>
+  <li>Apex Trigger
   <p>OrderUpdateFields: It's avoid to change the Order status if the Shipping Tracking Number is empty.</p>
   <p>Note: The Shipping Tracking Number is required only when the shipping is Express</p>
-  <li>
   </li>
 </ul>
 
