@@ -2,7 +2,7 @@
 
 ## This is a simple Lightning component to edit the Order status and Tracking Nubmer fields in line.
 
-## Resources
+## Customer Pain: The Order manager...
 
 ## Description of Files and Directories
 
