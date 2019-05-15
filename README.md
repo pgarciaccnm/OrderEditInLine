@@ -12,6 +12,14 @@
   <li>Custom fields<p>Order.CaseId: it's lookup field of Case.Id</p>
   <p>Shipping Tracking Number: It's a text field to enter the tracking number of the order<p>
     </li>
+  <li>Aura Components
+    <p>OrderLineEdit: It's render every Order<p>
+    <ul><li>OrderLineEditController.js</li</ul>
+    <p>OrderTableEdit: It's render the all Orders in a Card element</p>
+      <ul><li>OrderTableController.js</li</ul>
+    
+  
+  </li>
 </ul>
 
 ## Issues
