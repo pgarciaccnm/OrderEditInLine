@@ -6,6 +6,10 @@
 <p> As Operator departement, I wan to manage the orders process through Case process because it provide me a better view of the order process.</p>
 
 ## Description of Files and Directories
-<ul><li>Custom fields<p>Order.CaseId: it's lookup field with Id of Case</p></li></ul>
+<ul>
+  <li>Custom fields<p>Order.CaseId: it's lookup field of Case.Id</p>
+  <p>Shipping Tracking Number: It's a text field to enter the tracking number of the order<p>
+    </li>
+</ul>
 
 ## Issues
